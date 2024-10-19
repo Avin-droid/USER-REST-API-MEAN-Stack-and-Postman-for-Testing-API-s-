@@ -1,0 +1,21 @@
+{
+  "name": "rest-api_user",
+  "version": "1.0.0",
+  "main": "user.js",
+  "scripts": {
+    "server": "nodemon user.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.20.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4",
+    "validator": "^13.12.0"
+  }
+}
