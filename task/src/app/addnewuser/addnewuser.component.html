@@ -1,0 +1,34 @@
+<form [formGroup]="frmReg" (ngSubmit)="saveUser()" novalidate="" class="styled-form">
+
+    UserId:<input type="text" name="uid" [(ngModel)]="regUser.User_Id" formControlName="User_Id" /><br><br>
+    <h6 *ngIf="frmReg.controls.User_Id.touched && frmReg.controls.User_Id.invalid">User-Id Should Contain Only Numerical Value</h6>
+
+    First-Name:<input type="text" name="fname" [(ngModel)]="regUser.First_Name" formControlName="First_Name" /><br><br>
+    <h6 *ngIf="frmReg.controls.First_Name.touched && frmReg.controls.First_Name.invalid">First Name Should Contain Only Alphabets</h6>
+
+    Last-Name:<input type="text" name="lname" [(ngModel)]="regUser.Last_Name" formControlName="Last_Name" /><br><br>
+    <h6 *ngIf="frmReg.controls.Last_Name.touched && frmReg.controls.Last_Name.invalid">Last Name Should Contain Only Alphabets</h6>
+
+    Age:<input type="text" name="ag" [(ngModel)]="regUser.Age" formControlName="Age" /><br><br>
+    <h6 *ngIf="frmReg.controls.Age.touched && frmReg.controls.Age.invalid">Age Should Contain Only Numerical Value and Age Can't be 0 or -ve</h6>
+
+    Address:<input type="text" name="addr" [(ngModel)]="regUser.Address" formControlName="Address" /><br><br>
+    <h6 *ngIf="frmReg.controls.Address.touched && frmReg.controls.Address.invalid">Address Should Contain Only Alphanumeric Characters</h6>
+
+    Email-Id:<input type="text" name="em" [(ngModel)]="regUser.Email_Id" formControlName="Email_Id" /><br><br>
+    <h6 *ngIf="frmReg.controls.Email_Id.touched && frmReg.controls.Email_Id.invalid">Email-Id is Mandatory For User Authentication</h6>
+
+    Password:<input type="password" name="pwd" [(ngModel)]="regUser.Password" formControlName="Password" /><br><br>
+    <h6 *ngIf="frmReg.controls.Password.touched && frmReg.controls.Password.invalid">Password Can't exceed below 8 and above 16 Characters</h6>
+    <h6 *ngIf="frmReg.controls.Password.errors?.['minlength']">Password Minimum Length should be 8 characters</h6>
+    <h6 *ngIf="frmReg.controls.Password.errors?.['maxlength']">Password Maximum Length should be 16 characters</h6>
+
+
+
+    Contact-Number:<input type="text" name="cno" [(ngModel)]="regUser.Contact" formControlName="Contact"  /><br><br>
+    <h6 *ngIf="frmReg.controls.Contact.touched && frmReg.controls.Contact.invalid">Contact Number Should be of exact 10 Numeric Characters</h6>
+    <h6 *ngIf="frmReg.controls.Contact.errors?.['minlength']">Contact Number should not be less than Numeric Characters</h6>
+
+    <input type="submit" value="POST" [ngClass]="{'disabled-button': frmReg.invalid, 'enabled-button': frmReg.valid}" >    
+    
+</form>

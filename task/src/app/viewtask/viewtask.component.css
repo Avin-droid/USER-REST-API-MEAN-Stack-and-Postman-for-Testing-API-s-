@@ -1,0 +1,129 @@
+.styled-form 
+  {
+    background: linear-gradient(135deg, white, red); 
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 8px 15px black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .radio-group 
+  {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  input[type="radio"] 
+  {
+    margin-right: 10px;
+    vertical-align: middle;
+    height: 10px;
+    width: 10px;
+  }
+  
+  label 
+  {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .submit-btn 
+  {
+    background: linear-gradient(135deg, rgba(0, 128, 0, 0.773), rgba(0, 0, 0, 0.789)); 
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px black;
+  }
+  
+  .submit-btn:hover 
+  {
+    background: linear-gradient(135deg, green,rgba(0, 128, 0, 0.725)); 
+    box-shadow: 0 15px 20px brown;
+  }
+  
+  .submit-btn:active 
+  {
+    box-shadow: 0 5px 10px rgba(255, 126, 95, 0.2);
+  }
+  
+  .back-link 
+  {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-link:hover 
+  {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .styled-form:hover 
+  {
+    box-shadow: 0 10px 20px black;
+  }
+   
+  
+  .task-container 
+  {
+    border: 1px solid black;
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 8px; 
+    background-color: whitesmoke;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .update-button 
+  {
+    background-color: green;
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-right: 10px; 
+  }
+  
+  .update-button:disabled 
+  {
+    background-color: lightgray; 
+    cursor: not-allowed; 
+  }
+  
+  .delete-button 
+  {
+    background-color: red; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+
+  .disabled-button
+  {
+    background-color: grey;
+    color: silver;
+    cursor: not-allowed;
+  }
+
+
+  
+  

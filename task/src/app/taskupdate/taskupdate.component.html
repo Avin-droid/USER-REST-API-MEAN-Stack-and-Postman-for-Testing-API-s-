@@ -1,0 +1,7 @@
+<form #frmTask="ngForm" (ngSubmit)="savetask()" novalidate="">
+    <input type="text" name="_id" [(ngModel)]="regObj._id" hidden="true" ><br><br>
+   <h2>Description:</h2> <input type="text" name="desc" [(ngModel)]="regObj.description" class="disabled-description" disabled><br><br>
+    <h2>Completed:</h2> <input type="radio" name="optC" [value]="true" [(ngModel)]="regObj.completed"  >Yes
+    <input type="radio" name="optC" [value]="false" [(ngModel)]="regObj.completed" >No<br><br>
+    <input type="submit" value="UPDATE TASK">
+</form>

@@ -1,0 +1,82 @@
+form 
+{
+  background:linear-gradient(rgba(255, 0, 0, 0.658),grey,rgba(255, 0, 0, 0.607),rgba(0, 0, 0, 0.695));
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+form h2 
+{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+input[type="text"] 
+{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+}
+
+input[type="text"]:focus 
+{
+  border-color: black;
+  box-shadow: 0 0 5px black;
+  outline: none;
+}
+
+input[type="radio"] 
+{
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+label 
+{
+  font-size: 16px;
+  color: black;
+  font-style:bold;
+}
+
+input[type="submit"] 
+{
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"].disabled 
+{
+  background-color: grey;
+  pointer-events: none;
+}
+
+input[type="submit"].active 
+{
+  background-color: green;
+  pointer-events: auto;
+}
+
+h5 
+{
+  color: black;
+  font-size: 14px;
+  margin-top: 5px;
+}
+

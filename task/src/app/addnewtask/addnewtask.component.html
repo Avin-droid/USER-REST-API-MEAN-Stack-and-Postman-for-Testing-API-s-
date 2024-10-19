@@ -1,0 +1,12 @@
+<form #frmTask="ngForm" (ngSubmit)="addTasks()" novalidate="">
+    <h2>DESCRIPTION</h2> <input type="text" name="desc" [(ngModel)]="taskobj.description" #desc="ngModel" required>
+    <h5 *ngIf="desc.touched && desc.invalid">Task Description is required</h5>
+
+    <h2>COMPLETED</h2> <input type="radio" name="optc" value="true" [(ngModel)]="taskobj.completed" #completed="ngModel">YES
+
+    <input type="radio" name="optc" value="false" [(ngModel)]="taskobj.completed" #completed="ngModel"  />NO  <br><br> 
+    <h5 *ngIf="completed.touched && !taskobj.completed && frmTask.submitted">Please Yes or No for Completed status</h5>
+
+    <input type="submit" value="ADD-TASK" [class.disabled]="frmTask.invalid" [class.active]="frmTask.valid" />
+
+</form>

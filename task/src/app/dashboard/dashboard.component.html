@@ -1,0 +1,17 @@
+<div class="button-container">
+    <button class="gradient-button">
+        <a href="AddNewTask" class="button-link">Add New Task</a>
+    </button>
+
+    <button class="gradient-button">
+        <a href="ViewAllTask" class="button-link">View All Task</a>
+    </button>
+
+    <div class="dropdown">
+        <button class="dropdown-button">Logoff</button>
+        <div class="dropdown-content">
+            <button (click)="Logout()" class="logout-button">Logout</button>
+            <button (click)="LogoutAll()" class="logout-button">Logout-All</button>
+        </div>
+    </div>
+</div>

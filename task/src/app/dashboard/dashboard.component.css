@@ -1,0 +1,139 @@
+.button-container 
+{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.gradient-button 
+{
+  background:linear-gradient(rgba(255, 0, 0, 0.658),rgba(255, 0, 0, 0.607),rgba(0, 0, 0, 0.695));
+  padding: 12px 25px;
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative; 
+}
+
+
+.gradient-button:hover 
+{
+  background:linear-gradient(rgba(255, 0, 0, 0.658),rgba(0, 0, 0, 0.448),rgba(255, 0, 0, 0.607),rgba(0, 0, 0, 0.695));
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.619);
+}
+
+.gradient-button:active 
+{
+  top: 2px; 
+  box-shadow: 0 5px 10px black;
+}
+
+
+.button-link 
+{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button 
+{
+  background: linear-gradient(rgba(255, 0, 0, 0.658), rgba(255, 0, 0, 0.607), rgba(0, 0, 0, 0.695));
+  padding: 12px 25px;
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background: linear-gradient(rgba(255, 0, 0, 0.658), rgba(255, 0, 0, 0.607), rgba(0, 0, 0, 0.695));
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-option 
+{
+  color: whitesmoke;
+  background: none;
+  padding: 12px 16px;
+  border: none;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.dropdown-option:hover 
+{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+  justify-content: center;
+}
+
+.logout-button 
+{
+  background: linear-gradient(rgba(255, 0, 0, 0.411), rgba(255, 0, 0, 0.405), rgba(0, 0, 0, 0.455));
+  padding: 8px 10px;
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 16px;
+  margin: 10px 0;  
+}
+
+.logout-button:hover 
+{
+  background-color: whitesmoke;
+  color: black;
+}
+

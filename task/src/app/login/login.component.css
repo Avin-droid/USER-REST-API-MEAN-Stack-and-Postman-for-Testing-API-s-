@@ -1,0 +1,121 @@
+form 
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.673), white); 
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+form label
+{
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"]
+{
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid whitesmoke;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus 
+{
+  border-color: black;
+  box-shadow: 0 0 5px rgba(116, 185, 255, 0.3);
+  outline: none;
+}
+
+form input[type="submit"] 
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 255, 0.474)); 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+form input[type="submit"]:hover 
+{
+  background: linear-gradient(135deg, blue, rgba(0, 0, 255, 0.474)); 
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.621);
+}
+
+
+form input[type="submit"]:disabled
+{
+  background: grey; 
+  cursor: not-allowed; 
+  box-shadow: none; 
+}
+
+form:hover 
+{
+  box-shadow: 0 10px 25px black;
+}
+
+h5 
+{
+  color: red; 
+  font-size: 14px; 
+  font-weight: bold; 
+  margin: 5px 0; 
+}
+
+h6
+{
+  color: darkred;
+  font-size: 12px; 
+  margin: 5px 0; 
+}
+  
+.gradient-button {
+  background: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 255, 0.474)); 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.gradient-button:hover 
+{
+  background: linear-gradient(135deg, blue, rgba(0, 0, 255, 0.474)); 
+
+}
+
+.button-link
+{
+  color: white;
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.button-link:hover 
+{
+  text-decoration: underline; 
+}
+
+.gradient-button:active 
+{
+  transform: scale(0.98); 
+}

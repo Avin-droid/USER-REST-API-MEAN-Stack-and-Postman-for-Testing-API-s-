@@ -1,0 +1,33 @@
+<form #frmview="ngForm" (ngSubmit)="viewtask()" class="styled-form">
+    <div class="radio-group">
+      <input type="radio" id="completed" name="optcomplete" value="true" [(ngModel)]="obj.completed">
+      <label for="completed">View Completed Task</label>
+    </div>
+  
+    <div class="radio-group">
+      <input type="radio" id="pending" name="optcomplete" value="false" [(ngModel)]="obj.completed">
+      <label for="pending">View Pending Task</label>
+    </div>
+  
+    <div class="radio-group">
+      <input type="radio" id="all" name="optcomplete" value="all" [(ngModel)]="obj.completed">
+      <label for="all">View All Tasks</label>
+    </div>
+
+    
+    <input type="submit" value="SHOW" class="submit-btn"><br><br>
+
+    <a href="Dashboard" class="back-link">BACK</a><br><br><br>
+</form>
+
+<div>
+  <h4 *ngFor="let i of taskArr" class="task-container">
+    Id:{{i._id}}<br>
+    Task:{{i.description}}<br>
+    Status:{{i.completed}}
+    <br>
+      <button (click)="edit(i._id)" [ngClass]="{'disabled-button':i.completed===true}" class="update-button">UPDATE</button>
+      <button (click)="del(i._id)" class="delete-button">DELETE</button>
+  </h4>
+</div>
+ 

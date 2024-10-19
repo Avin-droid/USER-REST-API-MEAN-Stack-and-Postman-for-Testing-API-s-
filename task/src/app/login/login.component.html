@@ -1,0 +1,17 @@
+<form #frmLogin="ngForm" (ngSubmit)="logincheck()" novalidate>
+    <label>Email-Id:</label>
+    <input type="text" name="email" [(ngModel)]="obj.Email_Id" #email="ngModel" required /><br><br>
+    <h5 *ngIf="email.touched && email.invalid">Email is required</h5>
+    <h6 *ngIf="email.errors?.['email'] && email.touched">Invalid Email-Id Pattern</h6>
+
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="obj.Password" #password="ngModel" required /><br><br>
+    <h5 *ngIf="password.touched && password.invalid">Password is required</h5>
+
+    <input type="submit" value="LOGIN" [disabled]="frmLogin.invalid"><br><br>
+
+    <button class="gradient-button">
+        <a href="AddNewUser" class="button-link">Register</a>
+    </button>
+
+</form>
