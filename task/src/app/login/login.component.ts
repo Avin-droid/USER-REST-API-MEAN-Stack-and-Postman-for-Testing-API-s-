@@ -13,8 +13,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit{
   obj:Login2=
   {
-    Email_Id:'avinash@gmail.com',
-    Password:'Avinash7057'
+    Email_Id:'',
+    Password:''
   }
   loginobj1:Login1=
   {
