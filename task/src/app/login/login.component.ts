@@ -25,12 +25,7 @@ export class LoginComponent implements OnInit{
   }
   
 
-  // loginobj2:Login2=
-  // {
-  //   email:'',
-  //   password:''
-  // }
-
+  
   temp:any
   t:any
   
